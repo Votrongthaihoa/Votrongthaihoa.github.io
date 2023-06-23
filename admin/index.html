@@ -1,480 +1,168 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-        <meta http-equiv="content-language" content="vi" />
-        <meta name="robots" content="index, follow'" />
-
-        <meta name="description" content="[ CHECKGDVMMO ] quỹ bảo hiểm CHECKGDV VIETNAM được chứng nhận bởi cục quản lý DMCA & truyền thông công nghệ cấp phép lưu hành." />
-        <meta name="keywords" content="[ CHECKGDVMMO ] quỹ bảo hiểm CHECKGDV VIETNAM được chứng nhận bởi cục quản lý DMCA & truyền thông công nghệ cấp phép lưu hành." />
-
-        <!-- Open Graph data -->
-        <meta property="og:title" content="[ CHECKGDVMMO] Hệ Thống Kiểm tra, Tố cáo thông tin lừa đảo" />
-        <meta property="og:type" content="Website" />
-        <meta property="og:url" content="https://THAIHOA2006.TK" />
-        
-        <meta property="og:description" content="[ CHECKGDVMMO ] được CHECKGDVMMO VIETNAM bảo vệ số tiền trong quỹ bảo hiểm " />
-        <meta property="og:site_name" content="[ CHECKGDVMMO ] được CHECKGDVMMO VIETNAM bảo Vệ số tiền trong quỹ bảo hiểm " />
-        <meta property="article:section" content="[ CHECKGDVMMO ] quỹ bảo hiểm CHECKGDVMMO VIETNAM được chứng nhận bởi cục quản lý DMCA & truyền thông công nghệ cấp phép lưu hành." />
-        <meta property="article:tag" content="[ CHECKGDVMMO ] quỹ bảo hiểm CHECKGDVMMO VIETNAM được chứng nhận bởi cục quản lý DMCA & truyền thông công nghệ cấp phép lưu hành." />
-
-        <link rel="icon" href="assets/default/images/Picsart_22-10-16_07-31-12-867.png
-" />
-        <link rel="apple-touch-icon" href="assets/default/images/Picsart_22-10-16_07-31-12-867.png
-" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
-
-        <link rel="stylesheet" href="assets/default/plugins/bootstrap/bootstrap.min.css" />
-        <link rel="stylesheet" href="assets/default/plugins/swiper/swiper-bundle.min.css" />
-        <link rel="stylesheet" href="assets/default/plugins/select2/css/select2.min.css" />
-        <link rel="stylesheet" href="assets/default/plugins/fancybox/fancybox.min.css" />
-        <link rel="stylesheet" href="assets/default/fonts/fontawesome/css/all.min.css" />
-        <link rel="stylesheet" href="assets/default/css/base.css?1687530493" />
-        <link rel="stylesheet" href="assets/default/css/style.css?1687530493" />
-        
-        <script type="text/javascript" src="assets/default/plugins/jquery.min.js"></script>
-        <script type="text/javascript" src="assets/default/plugins/bootstrap/bootstrap.bundle.min.js"></script>
-        <script type="text/javascript" src="assets/default/plugins/swiper/swiper-bundle.min.js"></script>
-        <script type="text/javascript" src="assets/default/plugins/select2/js/select2.min.js"></script>
-        <script type="text/javascript" src="assets/default/plugins/fancybox/fancybox.min.js"></script>
-        <script type="text/javascript" src="assets/default/plugins/swal/sweetalert2.all.min.js"></script>
-        <script type="text/javascript" src="assets/default/plugins/cookie/cookie.min.js"></script>
-        <script type="text/javascript" src="assets/default/js/app.js?1687530493"></script>
-        <script>
-            function onloadCallback() {
-                grecaptcha.ready(function () {
-                    grecaptcha
-                        .execute("", {
-                            action: "homepage",
-                        })
-                        .then(function (token) {
-                            $(".recaptcha_token").val(token);
-                        });
-                });
-            }
-            function HideModal() {
-                Cookies.set("Hide", "TRUE", { expires: 1 });
-                $("#global-modal").modal("hide");
-            }
-            $(document).ready(function () {
-                if (!Cookies.get("Hide")) {
-                    $("#global-modal").modal("show");
-                }
-                $("#dropfile").click(function (event) {
-                    $("#uploadfile").trigger("click");
-                });
-            });
-
-        </script>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="shortcut icon" href="./files/thaihoa.jpg" type="image/x-icon">
+    <title>THAIHOA | HOME</title>
+    <link rel="stylesheet" href="./thanhdieuft-css/css/index.css">
+     <link rel="stylesheet" type="text/css" href="./thanhdieuft-css/_thanhdieu.css" /> 
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <meta name="author" content="THAIHOA">
+    <meta property="og:title" content="THAIHOA | HOME">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://thaihoa2006.tk/">
+    <meta property="og:image" content="./files/thaihoa.jpg">
+    <meta property="og:image:width" content="120">
+    <meta property="og:image:height" content="120">
+    <meta property="og:site_name" content="Thaihoa">
+    <meta name="theme-color" content="#00FFFF" />
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js' type='text/javascript'></script>
 </head>
-<link rel='shortcut icon' href='Juiooy8.png' />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<body>
-   <header class="header bg-white position-relative z-index-10" id="header">
-      <div class="header-main">
-         <div class="container">
-            <div class="row align-items-center">
-               <div class="col-lg-3">
-                  <div class="header-bar d-flex align-items-center">
-                     <div class="header-hamburger d-block d-lg-none">
-                        <button type="button" class="no-animation" id="header-hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        </button>
-                     </div>
-                     <div class="header-logo">
-                        <a href="">
-                        <img src="24t6Ilb.png" alt="ADMINSTRATOR VIETNAM" style="height:40px">
-                        </a>
-                     </div>
-                     <div class="header-button d-lg-none ml-auto d-flex align-items-center justify-content-end">
-                        <div class="header-button_items position-relative">
-                           <button type="button"
-                              class="btn-theme btn-theme_gray btn-collapse_search btn-call_search">
-                           <i class="far fa-search"></i>
-                           </button>
-                           <div class="header-search">
-                              <form method="GET" action="search">
-                                 <div class="form-group position-relative">
-                                    <input type="text" class="form-control" name="query"
-                                       placeholder="Nhập số điện thoại, số tài khoản ngân hàng ...">
-                                    <button type="submit">
-                                    <i class="far fa-search"></i>
-                                    </button>
-                                 </div>
-                              </form>
-                           </div>
-                        </div>
-                        <div class="header-button_items position-relative">
-                           <a href="https://admin.thaihoa2006.tk" role="button" class="btn-theme btn-theme_primary">
-                              <div class="d-block d-sm-none">
-                                 <i class="fas fa-exclamation"></i>
-                              </div>
-                              <div class="d-sm-block d-none">
-                                 Tố cáo lừa đảo
-                              </div>
-                              <span></span>
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-               </div>               
-               <div class="col-lg-6">
-                  <div id="header-navigation" class="header-navigation d-lg-flex align-items-center justify-content-end">
-                     <ul>
-                        <li class="d-block d-lg-none header-navigation_logo">
-                           <a href="">
-                           <img src="24t6Ilb.png" alt="" style="height:40px">
-                           </a>
-                           <button type="button" class="header-navigation_close" id="header-navigation_close"><i
-                              class="far fa-times"></i></button>
-                        </li>
-                        <li>
-                           <a  href="Thaihoa2006.tk" >
-                           GIỚI THIỆU
-                           </a>
-                        </li>
-                        <li>
-                           <a  href="https://admin.thaihoa2006.tk" >
-                           ĐIỀU KHOẢN
-                           </a>
-                        </li>
-                        <li>
-                        <a  href="" >
-                           CHÍNH SÁCH
-                           </a>
-                        </li>
-                        <li>
-                           <a  href="https://admin.thaihoa2006.tk" >
-                           QUỸ BẢO HIỂM ADMIN
-                           </a>
-                        </li>
-                        <li>
-                           <a  href="https://admin.thaihoa2006.tk" >
-                           TỐ CÁO LỪA ĐẢO                                         
-                     </ul>
-                  </div>
-               </div>
-               <div class="col-lg-3">
-                  <div class="header-button d-none d-lg-flex align-items-center justify-content-end">
-                     <div class="header-button_items position-relative">
-                        <button type="button" class="btn-theme btn-theme_gray btn-collapse_search btn-call_search">
-                        <i class="far fa-search"></i>
-                        </button>
-                        <div class="header-search">
-                           <form method="GET" action="search">
-                              <div class="form-group position-relative">
-                                 <input type="text" class="form-control" name="query"
-                                    placeholder="Nhập số điện thoại, số tài khoản ngân hàng ...">
-                                 <button type="submit">
-                                 <i class="far fa-search"></i>
-                                 </button>
-                              </div>
-                           </form>
-                        </div>
-                     </div>
-                     <div class="header-button_items position-relative">
-                        <a href="trust-https://admin.thaihoa2006.tk" role="button" class="btn-theme btn-theme_primary">
-                        TỐ CÁO LỪA ĐẢO
-                        <span></span>
-                        </a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="header-overlay" id="header-overlay"></div>
-   </header><title>[ Võ Trọng Thái Hòa ] CHECKGDV VIETNAM | DMCA</title>
-<div id="main" class="main">    
-    
-        <div class="section-gap section-profile">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-12 c ol-lg-10">
-                    <div class="profile-inner">
-                        <div class="profile-avatar">
-                                              <img src="SAwsoSg.jpg" alt="">
-                        </div>
-                        <div class="profile-title">
-                        Võ Trọng Thái Hòa <img src="cDQNc8v.gif" width="20"></h4>
-                        </div>
-                        <div class="profile-buttons">
-                           <div class="btn-checkmess">    
-                        <a href="https://m.me/100041446771263/" class="btn-theme btn-theme_primary"target="_blank">
-                                    <i class="fab fa-facebook-messenger"></i>
-                                    Check Mess
-                                    <span></span>
-                                    </a>
-                                <a href="https://m.me/100041446771263/" class="description-hidden">
-                                    <span>Ấn vào "Check Mess" nhắn tin cho GDV để chắc chắn rằng bạn đang giao dịch với Real</span>
-                                    <button>
-                                        Ok
-                                    </button>
-                                </a>
-                                <div class="description-overlay"></div>                                  
-                                   </div>
-                            <a href="tel:0363644360" class="btn-theme btn-theme_primary">
-                                <i class="fas fa-phone-alt"></i>
-                                Check Phone
-                                <span></span>
-                            </a>
-                          
-                        </div>                                                
-                        <div class="profile-boxs">
-                            <div class="row row-col-15">
-                                <div class="col-md-6">
-                                    <div class="profile-box"style="border: 1.5px solid #157DEC;border-radius: 10px;-moz-border-radius: 24px;-webkit-border-radius:20px;">
-                                        <div class="profile-box_content">
-                                            <div class="profile-box_content__title">
-                                               <font color="#157DEC"> Thông tin liên hệ</font>
-                                            </div>
-                                            <div class="profile-box_content__list">
-                                                <p>
-                                                    <span>
-                                                        <i class="fab fa-facebook"></i>
-                                                    </span>
-                                                    Check Facebook:
-                                                    <a href="https://fb.com/100041446771263" target="_blank">
-                                                        100041446771263                                                    </a>
-                                                </p>
-                                                <p>
-                                                    <span>
-                                                        <i class="fas fa-phone"></i>
-                                                    </span>
-                                                    Check Zalo:
-                                                    <a href="https://zalo.me/0363644360/" target="_blank">
-                                                        0363644360                                                    </a>
-                                                </p>
-                                                <p>
-                                                    <span>
-                                                        <i class="fab fa-telegram"></i>
-                                                    </span>
-                                                    Check Telegram:
-                                                    <a href="https://t.me/Thaihoa06/" target="_blank">
-                                                        Thaihoa06                                                    </a>                                                       
-                                                </p>
-                                                <p>
-                                                  <span>
-                                                      <i class="far fa-link"></i>
-                                                    </span>
-                                                    Website:
-                                                    <a href="https://Thaihoa2006.tk/">
-                                                        Thaihoa2006.tk                                                    </a>
-                                                </p>
-                                            </div>
-                                            <div class="profile-box_content__image">
-                                                <img src="assets/default/images/info.webp" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="profile-box" style="border: 1.5px solid #157DEC;border-radius: 10px;-moz-border-radius: 24px;-webkit-border-radius:20px;">
-                                        <div class="profile-box_content">
-                                        <div class="profile-box_content__title">
-                                               <font color="#157DEC"> Quỹ Bảo Hiểm THAIHOA2006.TK</font>
-                                               </div>                                                                                    
-                                            <div class="profile-box_content__desc">
-                                    <font color="#555555"><p>Khách hàng sẽ được <b>THAIHOA2006.TK bảo hiểm an toàn giao dịch</b> với số
-                                                    tiền trong quỹ bảo hiểm <strong class="text-danger"><font color="#157DEC">123.456.789 VND</strong></font> của <strong>Võ Trọng Thái Hòa</strong></p>
-                                            </div>
-                                            <div class="profile-box_content__image">
-                                                <img src="assets/default/images/shield.webp" alt="">
-                                                </div>
-                                            
-                                        
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="profile-boxs">
-                            <div class="profile-box profile-box_nopr" style="border: 1.5px solid #157DEC;border-radius: 10px;-moz-border-radius: 24px;-webkit-border-radius:20px;">
-                                <div class="profile-box_content">
-                                    <div class="profile-box_content__title">
-                                        <font color="#157DEC">Tài Khoản Ngân Hàng Của Võ Trọng Thái Hòa</font>
-                                    </div>
-                                    <ul class="pl-3 mb-0">
-<li class="oo9gr5id" dir="auto"> <img src="assets/img-pqn/momo.png" height="15"> <font color="#000000"><strong>MOMO: <font color="#000000"></strong>0363644360 - <font color="#ff0000"><b>Võ Trọng Thái Hòa</b></font> <font color="#000000"><a href="javascript:void(0)" class="copy-text" data-text="0363644360"><i class="fas fa-copy"></i></a>
-<li class="oo9gr5id" dir="auto"> <img src="assets/img-pqn/mbbank.png" height="15"> <strong>MBBank: </strong>0363644360 - <font color="#ff0000"><b>Võ Trọng Thái Hòa</b></font> <font color="#000000"><a href="javascript:void(0)" class="copy-text" data-text="0363644360"><i class="fas fa-copy"></i></a></font>
-									</ul></ul>
-</div>
-</div>
-</div>
-<div class="profile-boxs">
-    <div class="profile-box profile-box_nopr" style="border: 1.5px solid #157DEC;border-radius: 10px;-moz-border-radius: 24px;-webkit-border-radius:20px;">
-    <div class="profile-box_content">
-    <div class="profile-box_content__title"><font color="#157DEC">Dịch Vụ Cung Cấp</div></font>
-  <ul class="pl-3 mb-0">
-<li class="oo9gr5id" dir="auto"> <strong>Dịch Vụ: </strong>Admin</b></font>
+<section class="animated-background">
+  <div id="stars1"></div>
+  <div id="stars2"></div>
+  <div id="stars3"></div>
+</section>
+<!-- ===== Viền Webs - Làm Mờ Khi Tải Trang Và Thanh Điều Hướng ===== -->
+<body onclick="audio.play()" class="Border" onLoad="onCreate()">
+    <div class="BlurWebs">
+    <div class="Topnav">
+    <!-- ===== Thẻ này giúp không mở cửa số mới ===== -->
+    <a class="Active">HOME</a>
+    <a href="https://thaihoa.ml/Test">FORUM</a>
+    <a href="Thaihoa">DOWNLOAD</a>
+    <!--
+    Hoặc có thể sử dụng thẻ này, nó sẽ mở 1 cửa sổ mới.
+    /*
+    <a id="Diễn Đàn" onClick="window.open('main/more/forum', '_nothing');">FORUM</a>
+    <a id="Tải Xuống" onClick="window.open('Thaihoa', '_nothing');">DOWNLOAD</a>
+    */
+    -->
+    <a style="color:rgb(255, 0, 0);">
+    <span id="fps">60.0</span> FPS</a></div>
+    <br>
+    <p align="center">
+    <img class="Blob" src="./files/thaihoa.jpg" width="120" height="120" alpha="_Thaihoa_"></p>
+    <h2 class="NameFtThaihoa">
+      <div id="userName">
+        @Thaihoa <img title="Thaihoa Đã Xác Nhận Đây Là Trang
+Cá Nhân Thật Của Người Của Công Chúng Này." src="https://nhanhoa.com/uploads/attach/1618816460_tich_xanh_facebook.png"  width="11" height="11" alt="tichxanh">
+      </div></h2> 
+   <h2 class="TieuSu">
+    Hey brother, I'm a Developer.<br>I like website design :)</h2> <br>
+    <br><hr class="New"><br>
+    <ul class="icons">
+    <br>
+    <div class="MangXaHoiFtThaiHoa">
+      <h2 class="NameFtThaiHoa">Social Network</h2> <br>
+    <a id="Youtube" onClick="Youtube()">
+    <div class="Youtube"> <i class="fa fa-youtube-play">&nbsp;</i> Youtube</div></a>
+    <br>
+    <a id="Facebook" onClick="Facebook()">
+    <div class="Facebook"> <i class="fab fa-facebook">&nbsp;</i> Facebook</div>
+    </a>
+    <br>
+    <a id="Discord" onClick="Discord()">
+    <div class="Discord"><i class='fab fa-discord'>&nbsp; </i> Discord</div></a>
+    <br>
+   </div>
+   <br> <br><hr class="New">
+    <br>
+    <br>
     </div>
-    </div>
-    </div>
- <div class="profile-boxs">
-    <div class="profile-box profile-box_nopr" style="border: 1.5px solid #157DEC;border-radius: 10px;-moz-border-radius: 24px;-webkit-border-radius:20px;">
-    <div class="profile-box_content">
-    <div class="profile-box_content__title"><font color="#157DEC">Dịch Vụ Trung Gian</div></font>
-  <ul class="pl-3 mb-0">
-    <li class="oo9gr5id" dir="auto"> <font color="#000000"><strong>10,000 - 199,000 : </strong>1000d</b></font>
-    <li class="oo9gr5id" dir="auto"> <font color="#000000"><strong>200,000 - 1,000,000 : </strong>2000d</b></font>
-    <li class="oo9gr5id" dir="auto"> <font color="#000000"><strong>1,000,000 - 2,000,000 : </strong>3000d</b></font>
-    <li class="oo9gr5id" dir="auto"> <font color="#000000"><strong>2,000,000 - 5,000,000 : </strong>4000d</b></font>
-    <li class="oo9gr5id" dir="auto"> <font color="#000000"><strong>5,000,000 trở lên : </strong>5000d</b></font>
-        </div>
-        </div>
-        </div>
-        <div class="profile-boxs">
-<div class="profile-box profile-box_nopr" style="border: 1.5px solid #157DEC;border-radius: 10px;-moz-border-radius: 24px;-webkit-border-radius:20px;">
-<div class="profile-box_content">
-<div class="profile-box_content__title"><font color="#157DEC">Mô Tả</div></font>
-<div class="mb-3 ">
-<div class="mb-3">
-                                       <p> </p>                                    </div>                                       
-</div>
-</div>
-</div>
-<div class="profile-boxs">
-<div class="profile-box profile-box_nopr" style="border: 1.5px solid #157DEC;border-radius: 10px;-moz-border-radius: 24px;-webkit-border-radius:20px;">
-<div class="profile-box_content">
-<div class="profile-box_content__title">
-<font color="#157DEC">Lưu ý</font>
-</div>
-</b>Tránh trường hợp Nick Fake, Ảnh Fake, Link Fake, Rửa Tiền…. Người dùng hãy nhớ Chát đúng Facebook, Gọi đúng SĐT, Chuyển khoản đúng những STK có ở trong trong link bảo hiểm này Checkscam cam kết bạn sẽ an toàn trong mọi giao dịch..!!!</b>
-</div>
-</div>
-</div>
-</div><br>                                    
-                        <div class="profile-desc">
+        <section id="skills">
+            <div class="NameFtThaiHoa" class="container skills">
+                <div class="row">
+                    <Skills class="col-12">
+                      <h2 class="NameFtThaiHoa"> Skill Language<br></h2>
+          
                         </div>
-                        </div>
-<div role="row" style="padding: 0px; margin: 0px; word-break: break-word; font-family: rb, sans-serif; font-size: 14px;"><div class="" style="padding: 0px; margin: 0px; word-break: break-word;"><div class="j83agx80 cbu4d94t" style="padding: 0px; margin: 0px; word-break: break-word;"><div class="j83agx80 jwdofwj8" style="padding: 0px; margin: 0px; word-break: break-word;"><div class="jn8vp64t l9j0dhe7 hpfvmrgz" style="padding: 0px; margin: 0px; word-break: break-word;"><div class="lzcic4wl" tabindex="0" role="gridcell" data-scope="messages_table" data-recover="true" style="padding: 0px; margin: 0px; word-break: break-word;"><div class="ni8dbmo4 stjgntxs g5ia77u1 ii04i59q j83agx80 cbu4d94t ll8tlv6m" data-testid="messenger_incoming_text_row" style="padding: 0px; margin: 0px; word-break: break-word;"><div class="l60d2q6s d1544ag0 sj5x9vvc tw6a2znq l9j0dhe7 ni8dbmo4 stjgntxs qlfml3jp inkptoze jk6sbkaj qttc61fc jm1wdb64 qv66sw1b ljqsnud1 g6srhlxm odn2s2vf" style="padding: 0px; margin: 0px; word-break: break-word;"><p style="padding: 0px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; word-break: break-word;"></p></div></div></div></div></div></div></div></div><p>Mọi Giao Dịch Của Bạn Với <b style="color: rgb(57, 132, 198);">"Võ Trọng Thái Hòa" </b>sẽ<b style=""> </b>được<b style=""> CHECKGDVMMO Bảo Vệ</b><b style="color: rgb(57, 132, 198);"> </b><span style="background-color: rgb(255, 255, 255);">với số</span><b><font style="background-color: rgb(255, 255, 255);">&nbsp;</font></b>tiền nằm trong <b><font color="#3984c6">Quỹ bảo hiểm 123456789 VND</font> </b>khi bạn tuân theo&nbsp;<a href="https://admin.thaihoa2006.tk" target="_blank">Điều Khoản Sử Dụng</a>&nbsp;của CHECK GDV MMO VIETNAM</p><p></p><p style="color: rgb(35, 35, 35); font-family: " open="" sans",="" sans-serif;="" font-size:="" 14px;"=""></p><p></p>
-</div>
-</div>
-</div>
-</div>
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="footer-top">
-                    <div class="row">
-                        <div class="col-md-7 col-lg-4">
-                            <div class="footer-item">
-                                <div class="footer-item_text footer-item_decor">
-                                    DATA CENTER CHECKGDV VIETNAM
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="skill-box">
+                            <div class="skill">
+                                <div class="skill-name">HTML/CSS</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per color1" per="80"></div>
                                 </div>
-                                <ul class="footer-item_list">                                
-                                <div class="footer-item_link">
-                                    Điện thoại:
-                                    <a href="#">036.364.4360</a>
-                                </div>
-                                <div class="footer-item_link">
-                                    Telegram:
-                                    <a href="#">@thaihoa06</a>
-                                </div>
-                                <div class="footer-item_link">
-                                    Email:
-                                    <a href="#"><span class="__cf_email__" data-cfemail="daa9afaaaab5a8ae9ab9b2bfb9b1bdbeacb7b7b5f4b3b4bcb5">[email&#160;protected]</span></a>
-                                </div>
-                                <div class="footer-item_link">
-                                    LH Zalo: 036.364.4360
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">MySql</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per color3" per="64"></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3 col-6">
-                            <div class="footer-item">
-                                <div class="footer-item_text footer-item_decor">
-                                    Dịch Vụ Center
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="skill-box">
+                            <div class="skill">
+                                <div class="skill-name">Lua</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per color1" per="87"></div>
                                 </div>
-                                <ul class="footer-item_list">
-                                    <li>
-                                        <a href="https://admin.thaihoa2006.tk">Dịch vụ uy tín</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://admin.thaihoa2006.tk">Đăng kí quỹ bảo hiểm</a>
-                                    </li>
-                                </ul>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 col-6">
-                            <div class="footer-item">
-                                <div class="footer-item_text footer-item_decor">
-                                    Đối Tác
+                            <div class="skill">
+                                <div class="skill-name">PHP</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per color2" per="31"></div>
                                 </div>
-                                <ul class="footer-item_list">
-                                    <li>
-                                        <a href="https://Thaihoa2006.tk/">Shop Bán Mail Cổ</a>
-                                    </li>
-                                    <li>                                                                                
-                                        <a href="https://2fa.live/">Get Mã 2FA</a>
-                                    </li>
-                                </ul>
                             </div>
-                        </div>
-
-                        <div class="col-md-6 col-lg-3 col-6">
-                            <div class="footer-item">
-                                <div class="footer-item_text footer-item_decor">
-                                    Cộng đồng
                                 </div>
-                                <ul class="list-unstyled mb-0 footer-item_social">
-                                    <li class="facebook">
-                                        <a href="#">
-                                            <i class="fab fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li class="telegram">
-                                        <a href="#">
-                                            <i class="fab fa-telegram-plane"></i>
-                                        </a>
-                                    </li>
-                                    <li class="youtube">
-                                        <a href="#">
-                                            <i class="fab fa-youtube"></i>
-                                        </a>
-                                    </li>
-                                    <li class="tiktok">
-                                        <a href="#">
-                                            <i class="fab fa-tiktok"></i>
-                                        </a>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>                
-	<footer class="text-center"><br>
+        </section>
+        <br>  <br><br><hr class="New"><br><br>
+ <!--<h2 class="NameFtThaiHoa">About Me</h2>-->
+    <footer class="Cuoi Trang">
+      <p class="ThaiHoaFtCopyright">
+<p1 class="rainbow italic" class="copyright">Created by <a style="text-decoration: none;" class="copyright" href="https://www.facebook.com/VoTrongThaiHoa"><font class="rainbow" color="white"> ThaiHoa</font></a>
+<br> <strong>All rights reserved - © 2022 </strong></p1>
+    </footer>
+    </div>
+    <div id="Toast">Welcome to the website ThaiHoa :)</div>
+  </div>
+</div>
+    <script type="text/javascript" src="./thanhdieuft-css/js/index.js"></script>
+ <script type="text/javascript">var fps = document.getElementById("fps");var startTime = Date.now();var frame = 0;function tick(){var time = Date.now();frame++;if(time - startTime > 1000){fps.innerHTML = (frame / ((time - startTime) / 1000)).toFixed(1);startTime = time;frame = 0;}window.requestAnimationFrame(tick);}tick();</script>
+    </div>
+     <script>
+     var audio = new Audio('https://raw.githubusercontent.com/Votrongthaihoa/Votrongthaihoa.github.io/main/y2mate.com%20-%20Lux%20%20%C4%90%C3%B3%20ch%E1%BB%89%20l%C3%A0%20th%C3%A0nh%20ph%E1%BB%91%20c%E1%BB%A7a%20anh%20Prod%20NewoulZ%20%20tas%20release.mp3');
+      
+      audio.oncanplaythrough = function(){
+      audio.play();
+      }
+      
+      audio.loop = true;
+      
+      audio.onended = function(){
+      audio.play();
+      }
+      
+       
+       $('.skill-per').each(function () {
+  var $this = $(this);
+  var per = $this.attr('per');
+  $this.css("width", per + '%');
+  $({ animatedValue: 0 }).animate({ animatedValue: per }, {
+    duration: 7000,
+    step: function () {
+      $this.attr('per', Math.floor(this.animatedValue) + '%');
+    },
+    complete: function () {
+      $this.attr('per', Math.floor(this.animatedValue) + '%');
+    }
+  });
+});
 
-<center>
-
-<br>
-
-<img src="24t6Ilb.png" height="40" alt="CHECKGDVMMO VIETNAM">
-
-<br> 
-
-<a href="Thaihoa2006.tk" rel="nofollow" target="_blank">Giới thiệu</a> | <a href="trust-service/contact" rel="nofollow" target="_blank">Liên hệ</a> | <a href="https://admin.thaihoa2006.tk" rel="nofollow" target="_blank">Điều khoản</a> | <a href="trust-service/news" rel="nofollow" target="_blank">Tin tức</a> | <a href="https://admin.thaihoa2006.tk" rel="nofollow" target="_blank">Quỹ bảo hiểm Admin</a> | <a href="https://admin.thaihoa2006.tk" rel="nofollow" target="_blank">Tố cáo lừa đảo</a>
-
-<br>Copyright © 2023 | Thiết kế web & Vận hành bởi <a href="https://admin.thaihoa2006.tk" rel="nofollow" target="_blank">Võ Trọng Thái Hòa</a>
-
-</center><br>
-
-</footer>
-
-<div class="float-buttons">
-    <a href="https://admin.thaihoa2006.tk" class="btn-theme btn-theme_primary">TỐ CÁO <span></span></a>
-    <a href="https://admin.thaihoa2006.tk" class="btn-theme btn-theme_success">CHECK UY TÍN<span></span></a>
+      </script>
 </div>
 
-<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
-
+</body>
 </html>
